@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+    /* Large-screen horizontal navigation layout conversion using CSS Flex */
+    header {
+        grid-template-columns: 32px auto;
+        padding: 0.75rem 2rem;
+    }
+
+    header img {
+        width: 32px;
+        height: 32px;
+    }
+
+    #nav-button {
+        display: none; /* Hide toggle button completely on broad views */
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        background-color: var(--bg-dark-accent);
+    }
+
+    nav a {
+        flex: 1;
+        text-align: center;
+        border-bottom: none;
+        border-right: 1px solid #333842;
+        padding: 1.1rem;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    /* Asymmetric multi-column structural grid matching home wireframes */
+    .layout-grid {
+        display: grid;
+        grid-template-columns: 2.2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .full-width-card {
+        grid-column: span 2;
+    }
+
+    /* Flex system display matrix converting course cards list into blocks rows */
+    .course-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}

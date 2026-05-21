@@ -1,0 +1,252 @@
+:root {
+    --bg-main: #ffffff;
+    --bg-card-wrap: #dbdbdb;
+    --bg-dark-accent: #22252a;
+    --bg-card-sub: #ececec;
+    --border-gray: #b5b5b5;
+    
+    /* Dynamic Course indicator properties */
+    --course-complete: #c5c5c5;
+    --course-incomplete: #f4f4f4;
+    --font-color: #000000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    background-color: var(--bg-main);
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Header CSS Grid structure mapping exactly to W1 activity parameters */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    gap: 15px;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border-gray);
+    position: relative;
+}
+
+header img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+/* Hamburger Touch Target Standard Rule (44px x 44px Anchor Boundary Box) */
+#nav-button {
+    width: 44px;
+    height: 44px;
+    background: #eaeaea;
+    border: 1px solid #7c7c7c;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Pseudo-element Entity Render Engine block mapping to instructions */
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* 2. Mobile vertical navigation panel dropdown overlay container styles */
+nav {
+    display: none;
+    background-color: var(--bg-dark-accent);
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #333842;
+    transition: background 0.15s ease;
+}
+
+nav a:hover {
+    background-color: #3e4450;
+}
+
+nav a.active {
+    background-color: #555c6b;
+}
+
+/* 3. Base Main Section layouts */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1.25rem 0;
+}
+
+.layout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    background-color: var(--bg-card-wrap);
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--bg-dark-accent);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 1.25rem;
+    line-height: 1.5;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #a8a8a8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 4. Filter Component Layout Elements styles */
+.filter-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.filter-btn {
+    padding: 0.6rem;
+    background-color: var(--bg-card-sub);
+    border: 1px solid #7c7c7c;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.filter-btn:hover {
+    background-color: #d8d8d8;
+}
+
+.filter-btn.active {
+    background-color: #a8a8a8;
+    border: 2px solid #000000;
+}
+
+/* 5. Dynamic Card Loops Layout Elements styles */
+.course-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.course-item {
+    padding: 0.85rem;
+    border: 1px solid #919191;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.course-item.completed {
+    background-color: var(--course-complete);
+    color: var(--font-color);
+    border-left: 6px solid #4a4a4a;
+}
+
+.course-item.incomplete {
+    background-color: var(--course-incomplete);
+    color: #666666;
+    border-left: 6px solid #b5b5b5;
+}
+
+.credits-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+/* 6. Footer Content Grid Styles */
+footer {
+    background-color: var(--bg-card-wrap);
+    border-top: 1px solid var(--border-gray);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--font-color);
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.15);
+}
+
+footer p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
