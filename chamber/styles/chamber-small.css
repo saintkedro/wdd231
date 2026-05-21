@@ -1,0 +1,162 @@
+:root {
+    --primary: #1e3a8a;
+    --secondary: #0d9488;
+    --dark-neutral: #1e293b;
+    --light-surface: #f8fafc;
+    --border-gray: #e2e8f0;
+    --gold-tier: #fef08a;
+    --silver-tier: #e2e8f0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: var(--dark-neutral);
+}
+
+/* Header Config matching required fixed spacing rules */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    gap: 12px;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--border-gray);
+}
+
+header img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+header span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#nav-button {
+    width: 44px;
+    height: 44px;
+    background: var(--light-surface);
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hamburger::before { content: "\2630"; font-size: 1.25rem; font-weight: bold; }
+.hamburger.show::before { content: "\00D7"; font-size: 1.25rem; font-weight: bold; }
+
+/* Mobile Navigation Setup */
+nav {
+    display: none;
+    background-color: var(--dark-neutral);
+    flex-direction: column;
+}
+
+nav.open { display: flex; }
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+    transition: background 0.2s ease;
+}
+
+nav a:hover, nav a.active { background-color: var(--secondary); }
+
+/* Dashboard Headers & Layout Toggles controls */
+main { padding: 1rem; max-width: 1200px; margin: 0 auto; }
+.directory-hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle-controls { display: flex; gap: 0.5rem; }
+.control-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-gray);
+    background-color: var(--light-surface);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.control-btn.active {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+/* ================== VIEW MUTATION MODE PATTERNS ================== */
+
+/* A. Grid Card Layout Pattern */
+.grid-mode {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.grid-mode .member-card {
+    background-color: var(--light-surface);
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.grid-mode .member-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--border-gray);
+}
+
+.grid-mode .member-card.tier-3 { border-top: 5px solid #eab308; } /* Gold */
+.grid-mode .member-card.tier-2 { border-top: 5px solid #94a3b8; } /* Silver */
+
+/* B. List Layout Pattern (Forces clean tabular rows structure output) */
+.list-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    border: 1px solid var(--border-gray);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.list-mode .member-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.list-mode .member-card:nth-child(even) { background-color: var(--light-surface); }
+.list-mode .member-card:last-child { border-bottom: none; }
+.list-mode .member-card img, .list-mode .member-card .tagline { display: none; } /* Hide heavy assets in list mode */
+
+.member-card h2 { margin: 0 0 0.5rem 0; font-size: 1.2rem; color: var(--primary); }
+.member-card p { margin: 0.25rem 0; font-size: 0.9rem; }
+.member-card a { color: var(--secondary); text-decoration: none; font-weight: 500; }
+
+/* Footer Specifications */
+footer {
+    background-color: var(--light-surface);
+    border-top: 1px solid var(--border-gray);
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+footer hr { border: 0; border-top: 1px solid var(--border-gray); margin: 1.5rem 0; }
+.footer-meta p { margin: 0.4rem 0; font-size: 0.85rem; color: var(--dark-neutral); }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyo Chamber of Commerce - Business Directory</title>
+    <meta name="description" content="Explore verified local business listings, corporate partners, and service providers in the Uyo business directory.">
+    <meta name="author" content="Kingsley Isong">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Uyo Chamber of Commerce - Business Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Connect with verified local service vendors and premium silver and gold tier business providers.">
+    <meta property="og:image" content="https://kingsleyisong.github.io/wdd231/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://kingsleyisong.github.io/wdd231/chamber/directory.html">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    
+    <script src="scripts/directory.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Uyo Chamber of Commerce Emblem Logo" width="1" height="1">
+        <span>Uyo Chamber</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle structural menu view"></button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <div class="directory-hero-header">
+            <h1>Business Directory</h1>
+            <div class="view-toggle-controls">
+                <button id="viewGrid" class="control-btn active" aria-label="Display entries as Grid Cards">🎴 Grid</button>
+                <button id="viewList" class="control-btn" aria-label="Display entries as Line List">☰ List</button>
+            </div>
+        </div>
+        
+        <article id="directoryDisplay" class="grid-mode"></article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Uyo Chamber of Commerce</h3>
+            <p>100 Central Development Boulevard, Uyo, Akwa Ibom, Nigeria</p>
+            <p>info@uyochamber.org | +234 800 CHAMBER</p>
+        </div>
+        <hr>
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> | Kingsley Isong | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

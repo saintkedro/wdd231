@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Everyday Digital Services",
+        "address": "12 Ikot Ekpene Road, Uyo",
+        "phone": "+234 812 345 6789",
+        "website": "https://everydaydigital.ng",
+        "image": "images/member-eds.jpg",
+        "level": 3,
+        "tagline": "Empowering local businesses via high-scale frontend systems."
+    },
+    {
+        "name": "Ibom Tech Hub",
+        "address": "24 IBB Avenue, Uyo",
+        "phone": "+234 803 111 2222",
+        "website": "https://ibomtech.org",
+        "image": "images/member-ibom.jpg",
+        "level": 2,
+        "tagline": "Incubating the next wave of West African digital innovators."
+    },
+    {
+        "name": "Uyo Smash Tennis Academy",
+        "address": "Sports Complex, Enen Afaha",
+        "phone": "+234 705 999 8888",
+        "website": "https://uyosmash.club",
+        "image": "images/member-smash.jpg",
+        "level": 1,
+        "tagline": "Premium coaching and ladder tournaments for regional athletes."
+    },
+    {
+        "name": "Apex Creative Studio",
+        "address": "5 Oron Road, Uyo",
+        "phone": "+234 901 222 3333",
+        "website": "https://apexstudio.ng",
+        "image": "images/member-apex.jpg",
+        "level": 1,
+        "tagline": "Architectural visualizations and luxury interior design planning."
+    },
+    {
+        "name": "Meridian Agro-Allied Co.",
+        "address": "Industrial Estate, Itam",
+        "phone": "+234 811 444 5555",
+        "website": "https://meridianagro.ng",
+        "image": "images/member-meridian.jpg",
+        "level": 2,
+        "tagline": "Sustainable supply chains connecting farms to urban networks."
+    },
+    {
+        "name": "Capital Trust Cooperative",
+        "address": "88 Aka Road, Uyo",
+        "phone": "+234 802 777 8888",
+        "website": "https://capitaltrust.coop",
+        "image": "images/member-trust.jpg",
+        "level": 3,
+        "tagline": "Scalable microfinance and business management solutions."
+    },
+    {
+        "name": "Blue Horizon Logistics",
+        "address": "Plot 14 Abak Road, Uyo",
+        "phone": "+234 703 555 6666",
+        "website": "https://bluehorizon.ng",
+        "image": "images/member-blue.jpg",
+        "level": 2,
+        "tagline": "Seamless cross-country deliveries and haulage optimization."
+    }
+]
