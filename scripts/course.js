@@ -28,12 +28,12 @@ const courses = [
     },
     {
         subject: 'WDD',
-        number: 131,
+        number: 231,
         title: 'Web Frontend Development I',
         credits: 3,
         certificate: 'Web and Computer Programming',
         description: 'Focuses on structural semantic construction and base client interaction styling scripts.',
-        completed: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -42,11 +42,11 @@ const courses = [
         credits: 3,
         certificate: 'Web and Computer Programming',
         description: 'Introduces Object-Oriented paradigm concepts and structures.',
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
-        number: 231,
+        number: 321,
         title: 'Web Frontend Development II',
         credits: 3,
         certificate: 'Web and Computer Programming',
