@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyo Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Uyo Chamber of Commerce. Connecting local enterprises, driving regional economic acceleration, and providing business resources.">
+    <meta name="author" content="Kingsley Isong">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Uyo Chamber of Commerce Logo" width="1" height="1">
+        <span>Uyo Chamber</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation viewport"></button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-small.jpg" alt="Uyo modern commercial skyline" class="hero-graphic" loading="eager">
+            </picture>
+            <div class="hero-cta-box">
+                <h2>Empower Your Business Growth</h2>
+                <p>Join our active network of verified regional professionals and innovators today.</p>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </div>
+
+        <h1 class="hidden-heading">Dashboard</h1>
+
+        <div class="home-dashboard-layout">
+            
+            <section class="dashboard-card events-card">
+                <h2>Upcoming Events</h2>
+                <div class="card-inner">
+                    <ul class="events-list">
+                        <li>
+                            <span class="event-date">Jun 05</span>
+                            <div class="event-details">
+                                <strong>B2B Digital Acceleration Summit</strong>
+                                <p>Tech Hub Arena | 09:00 WAT</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="event-date">Jun 18</span>
+                            <div class="event-details">
+                                <strong>SME Microfinance Synergy Dinner</strong>
+                                <p>Meridian Hall | 18:00 WAT</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="dashboard-card weather-card">
+                <h2>Current Weather</h2>
+                <div class="card-inner text-center" id="weather-wrapper">
+                    <p class="loading-placeholder">Fetching current conditions...</p>
+                    </div>
+            </section>
+
+            <section class="dashboard-card forecast-card">
+                <h2>Weather Forecast</h2>
+                <div class="card-inner" id="forecast-wrapper">
+                    <ul class="forecast-timeline" id="forecast-list">
+                        <li class="loading-placeholder">Fetching forecast timeline...</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlight-outer-wrap">
+            <h2>Chamber Business Spotlights</h2>
+            <div class="spotlight-grid" id="spotlight-wrapper">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Uyo Chamber of Commerce</h3>
+            <p>100 Central Development Boulevard, Uyo, Akwa Ibom, Nigeria</p>
+            <p>info@uyochamber.org | +234 800 CHAMBER</p>
+        </div>
+        <hr>
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> | Kingsley Isong | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

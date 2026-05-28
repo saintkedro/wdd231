@@ -1,0 +1,23 @@
+{
+  "family_name": "Isong",
+  "move_in_date": "2025-11-29",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Kingsley Isong",
+      "gender": "Male",
+      "birthdate": "1984-04-28"
+    },
+    {
+      "name": "Lucy Isong",
+      "gender": "Female",
+      "birthdate": "1997-04-07"
+    },
+    {
+      "name": "Abaziono Isong",
+      "gender": "Male",
+      "birthdate": "2025-11-29"
+    }
+  ]
+}

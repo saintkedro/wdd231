@@ -35,3 +35,26 @@
     .list-mode .member-card p { margin: 0; flex: 2; text-align: left; }
     .list-mode .member-card .web-link { flex: 1.5; text-align: right; }
 }
+
+@media (min-width: 768px) {
+    .hero-graphic {
+        height: 380px;
+    }
+    
+    .hero-cta-box h2 { font-size: 2.2rem; }
+    .hero-cta-box p { font-size: 1.1rem; }
+
+    /* Asymmetric Dashboard layout splitting row elements via 3-column explicit grid matrix */
+    .home-dashboard-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Pull premium corporate showcases horizontally inline across columns */
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}

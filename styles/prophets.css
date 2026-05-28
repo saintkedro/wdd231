@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3f3d8f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+#cards section {
+    background-color: #d9d9ec;
+    border: 1px solid #6c63b5;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+
+/* Prophet Name */
+#cards h2 {
+    color: #4b4ba3;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+#cards p {
+    margin: 5px 0;
+    color: #222;
+    font-size: 1rem;
+}
+
+/* Images */
+#cards img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

@@ -160,3 +160,226 @@ footer {
 }
 footer hr { border: 0; border-top: 1px solid var(--border-gray); margin: 1.5rem 0; }
 .footer-meta p { margin: 0.4rem 0; font-size: 0.85rem; color: var(--dark-neutral); }
+
+/* Hero Showcase Presentation Layouts */
+.hero-container {
+    position: relative;
+    width: 100%;
+    background-color: var(--dark-neutral);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.hero-graphic {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.65;
+}
+
+.hero-cta-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.hero-cta-box h2 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero-cta-box p {
+    font-size: 0.9rem;
+    margin: 0 0 1.25rem 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0b7a70;
+}
+
+/* Home Dashboard Structures */
+.home-dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-card {
+    background-color: var(--light-surface);
+    border: 1px solid var(--border-gray);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.dashboard-card h2 {
+    background-color: var(--dark-neutral);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-inner {
+    padding: 1.25rem;
+}
+
+.text-center { text-align: center; }
+
+/* Events Module Rules */
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.events-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.event-date {
+    background-color: var(--primary);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 0.4rem;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 50px;
+}
+
+.event-details strong { font-size: 0.95rem; color: var(--primary); }
+.event-details p { margin: 0.2rem 0 0 0; font-size: 0.85rem; color: #555; }
+
+/* Weather Component Presentations */
+.weather-info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.weather-info-box img {
+    width: 64px;
+    height: 64px;
+}
+
+.temp-main {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.weather-desc {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0.25rem 0 0 0;
+}
+
+/* Forecast List Timeline Styles */
+.forecast-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-timeline li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--border-gray);
+}
+
+.forecast-timeline li:last-child { border-bottom: none; }
+.forecast-day { font-weight: 500; }
+.forecast-temp { font-weight: bold; color: var(--primary); }
+
+/* Spotlight Dynamic Block Grid System styles */
+.spotlight-outer-wrap {
+    margin-top: 2.5rem;
+}
+
+.spotlight-outer-wrap h2 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+}
+
+.spotlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.spotlight-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card h3 { margin: 0 0 0.5rem 0; color: var(--primary); font-size: 1.2rem; }
+.spotlight-card p { margin: 0.25rem 0; font-size: 0.85rem; }
+.spotlight-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    background-color: var(--light-surface);
+    color: #666;
+}
+.spotlight-card.gold-card { border-top: 4px solid #eab308; }
+.spotlight-card.gold-card .spotlight-badge { background-color: #fef08a; color: #854d0e; }
+.spotlight-card.silver-card { border-top: 4px solid #94a3b8; }
+.spotlight-card.silver-card .spotlight-badge { background-color: #e2e8f0; color: #334155; }
+.hidden-heading { display: none; }
