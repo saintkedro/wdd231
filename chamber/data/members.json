@@ -4,7 +4,7 @@
         "address": "12 Ikot Ekpene Road, Uyo",
         "phone": "+234 812 345 6789",
         "website": "https://everydaydigital.ng",
-        "image": "images/member-eds.jpg",
+        "image": "images/member-eds.png",
         "level": 3,
         "tagline": "Empowering local businesses via high-scale frontend systems."
     },
@@ -13,7 +13,7 @@
         "address": "24 IBB Avenue, Uyo",
         "phone": "+234 803 111 2222",
         "website": "https://ibomtech.org",
-        "image": "images/member-ibom.jpg",
+        "image": "images/member-ibomtech.jpg",
         "level": 2,
         "tagline": "Incubating the next wave of West African digital innovators."
     },
