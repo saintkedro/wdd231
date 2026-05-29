@@ -1,60 +1,64 @@
+/* ========================================================================
+   CHAMBER LARGE SIZING DELTAS - TARGETS SCREEN BOUNDARIES OVER 768px
+   ======================================================================== */
 @media (min-width: 768px) {
+    /* Header & Logo Spacing Scaling Adjustments */
     header {
         grid-template-columns: 32px auto;
-        padding: 1rem 2rem;
+        padding: 0.75rem 2rem;
     }
-    header img { width: 32px; height: 32px; }
-    #nav-button { display: none; }
 
+    header img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Hide the mobile navigation toggle switch item completely */
+    #nav-button {
+        display: none;
+    }
+
+    /* Turn stacked navigation panel elements into an inline flexbox row layout */
     nav {
         display: flex !important;
         flex-direction: row;
     }
+    
     nav a {
         flex: 1;
         border-bottom: none;
         border-right: 1px solid #334155;
         padding: 1.25rem;
     }
-    nav a:last-child { border-right: none; }
-
-    /* Grid layout mapping scaling adjustments */
-    .grid-mode {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-
-    /* List view mapping inline presentation layout adjustments */
-    .list-mode .member-card {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.75rem 1.5rem;
-    }
-    .list-mode .member-card h2 { margin: 0; flex: 2; }
-    .list-mode .member-card p { margin: 0; flex: 2; text-align: left; }
-    .list-mode .member-card .web-link { flex: 1.5; text-align: right; }
-}
-
-@media (min-width: 768px) {
-    .hero-graphic {
-        height: 380px;
-    }
     
-    .hero-cta-box h2 { font-size: 2.2rem; }
-    .hero-cta-box p { font-size: 1.1rem; }
+    nav a:last-child { 
+        border-right: none; 
+    }
 
-    /* Asymmetric Dashboard layout splitting row elements via 3-column explicit grid matrix */
+    /* Homepage Dashboard Layout: Single stacked column turns into a 3-column asymmetric matrix */
     .home-dashboard-layout {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 1.5rem;
     }
 
-    /* Pull premium corporate showcases horizontally inline across columns */
+    /* Directory View Toggles: Convert cards layout from stacked columns into a 3-column structural grid map */
+    .grid-mode, 
     .spotlight-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
+
+    /* Directory List View: Changes list presentation rows from stacked vertical data items to an inline horizontal orientation row layout */
+    .list-mode .member-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .list-mode .member-card h2 { flex: 2; }
+    .list-mode .member-card p  { flex: 2; text-align: left; }
+    .list-mode .member-card .web-link { flex: 1.5; text-align: right; }
 }
