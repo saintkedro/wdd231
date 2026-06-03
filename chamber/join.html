@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Application Form</title>
+    <meta name="description" content="Apply for membership with the Uyo Chamber of Commerce. Select a membership tier and connect with our commercial network.">
+    <meta name="author" content="Kingsley Isong">
+
+    <meta property="og:title" content="Uyo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Connect with verified local service vendors and premium silver and gold tier business providers in the city of Uyo, Nigeria.">
+    <meta property="og:image" content="https://saintkedro.github.io/wdd231/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://saintkedro.github.io/wdd231/chamber/join.html">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Uyo Chamber of Commerce Logo" width="1" height="1">
+        <span>Uyo Chamber</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation viewport"></button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Membership Application</h1>
+        
+        <div class="join-layout-container">
+            <section class="form-wrapper-box">
+                <form method="get" action="thankyou.html" id="chamberRegistrationForm">
+                    
+                    <label>First Name *
+                        <input type="text" name="firstName" autocomplete="given-name" required title="Applicant's given first name">
+                    </label>
+
+                    <label>Last Name *
+                        <input type="text" name="lastName" autocomplete="family-name" required title="Applicant's family last name">
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="orgTitle" autocomplete="organization-title" 
+                               pattern="[A-Za-z\s\-]{7,}" 
+                               title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
+                    </label>
+
+                    <label>Email Address *
+                        <input type="email" name="email" autocomplete="email" required placeholder="name@example.com" title="Corporate or personal email address">
+                    </label>
+
+                    <label>Mobile Phone Number *
+                        <input type="tel" name="phone" autocomplete="tel" required title="Mobile or office telephone contact string">
+                    </label>
+
+                    <label>Business/Organization Name *
+                        <input type="text" name="organization" autocomplete="organization" required title="Registered commercial entity name">
+                    </label>
+
+                    <label>Membership Level *
+                        <select name="membershipLevel" required title="Select operational tier structure">
+                            <option value="" disabled selected>Choose your tier...</option>
+                            <option value="np">Non-Profit Membership (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business Description
+                        <textarea name="description" rows="4" title="Brief summary of operations and corporate offerings"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="formTimestamp">
+
+                    <input type="submit" value="Join the Chamber" class="submit-btn">
+                </form>
+            </section>
+
+            <aside class="tier-sidebar-grid">
+                <h2>Membership Level Benefits</h2>
+                
+                <div class="tier-card anim-delay-1" id="card-np">
+                    <h3>Non-Profit Tier</h3>
+                    <button type="button" class="modal-trigger-btn" data-modal="modal-np">More Information &rarr;</button>
+                </div>
+
+                <div class="tier-card anim-delay-2" id="card-bronze">
+                    <h3>Bronze Tier</h3>
+                    <button type="button" class="modal-trigger-btn" data-modal="modal-bronze">More Information &rarr;</button>
+                </div>
+
+                <div class="tier-card anim-delay-3" id="card-silver">
+                    <h3>Silver Tier</h3>
+                    <button type="button" class="modal-trigger-btn" data-modal="modal-silver">More Information &rarr;</button>
+                </div>
+
+                <div class="tier-card anim-delay-4" id="card-gold">
+                    <h3>Gold Tier</h3>
+                    <button type="button" class="modal-trigger-btn" data-modal="modal-gold">More Information &rarr;</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <dialog id="modal-np" class="benefit-modal">
+        <div class="modal-header"><h2>Non-Profit Benefits</h2></div>
+        <div class="modal-body">
+            <p><strong>Cost:</strong> Free (N0 / Year)</p>
+            <p>Designed strictly for verified NGOs, educational foundations, and local community associations.</p>
+            <ul>
+                <li>Basic text placement inside regional index directories.</li>
+                <li>Access to public networking workshop environments.</li>
+            </ul>
+        </div>
+        <button type="button" class="close-modal-btn">Close Window</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="benefit-modal">
+        <div class="modal-header"><h2>Bronze Benefits</h2></div>
+        <div class="modal-body">
+            <p><strong>Cost:</strong> N25,000 / Year</p>
+            <p>Perfect for freelancers, early startups, and solo entrepreneurs.</p>
+            <ul>
+                <li>Full verified commercial directory listing placement.</li>
+                <li>Access to regular B2B networking dinners.</li>
+                <li>Chamber window sticker for public trust authentication.</li>
+            </ul>
+        </div>
+        <button type="button" class="close-modal-btn">Close Window</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="benefit-modal">
+        <div class="modal-header"><h2>Silver Benefits</h2></div>
+        <div class="modal-body">
+            <p><strong>Cost:</strong> N40,000 / Year</p>
+            <p>Engineered for growing businesses aiming to optimize market reach.</p>
+            <ul>
+                <li>All Bronze structural layout features included.</li>
+                <li>Automated home landing page random spotlight positioning eligibility.</li>
+                <li>15% discount entries for regional development summits.</li>
+            </ul>
+        </div>
+        <button type="button" class="close-modal-btn">Close Window</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="benefit-modal">
+        <div class="modal-header"><h2>Gold Benefits</h2></div>
+        <div class="modal-body">
+            <p><strong>Cost:</strong> N80,000 / Year</p>
+            <p>The premium visibility tier for major corporations and regional enterprises.</p>
+            <ul>
+                <li>All Silver structural layout components included.</li>
+                <li>Top priority placement inside search index directory components.</li>
+                <li>Two free premium keynote banners on homepage layout per quarter.</li>
+                <li>Direct board seat representation and policy voting options.</li>
+            </ul>
+        </div>
+        <button type="button" class="close-modal-btn">Close Window</button>
+    </dialog>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Uyo Chamber of Commerce</h3>
+            <p>100 Central Development Boulevard, Uyo, Akwa Ibom, Nigeria</p>
+            <p>info@uyochamber.org | +234 800 CHAMBER</p>
+        </div>
+        <hr>
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> | Kingsley Isong | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -61,4 +61,11 @@
     .list-mode .member-card h2 { flex: 2; }
     .list-mode .member-card p  { flex: 2; text-align: left; }
     .list-mode .member-card .web-link { flex: 1.5; text-align: right; }
+
+    .join-layout-container {
+        display: grid;
+        grid-template-columns: 1.8fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
 }

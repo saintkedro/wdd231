@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted - Thank You</title>
+    <meta name="description" content="Thank you for your submission. Your membership application data stream is being processed.">
+    <meta name="author" content="Kingsley Isong">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/thankyou.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Uyo Chamber of Commerce Logo" width="1" height="1">
+        <span>Uyo Chamber</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation viewport"></button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <section class="thankyou-box">
+            <h1>Application Received!</h1>
+            <p>Thank you for applying. Kindly confirm your inputs below:</p>
+            
+            <table class="data-display-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Submitted Profile Information</th>
+                    </tr>
+                </thead>
+                <tbody id="registrationSummaryData">
+                    </tbody>
+            </table>
+            
+            <a href="index.html" class="cta-btn" style="width:auto; display:inline-block; margin-top:1rem;">Return to Homepage</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Uyo Chamber of Commerce</h3>
+            <p>100 Central Development Boulevard, Uyo, Akwa Ibom, Nigeria</p>
+            <p>info@uyochamber.org | +234 800 CHAMBER</p>
+        </div>
+        <hr>
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> | Kingsley Isong | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
