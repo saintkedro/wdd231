@@ -1,71 +1,164 @@
 /* ========================================================================
-   CHAMBER LARGE SIZING DELTAS - TARGETS SCREEN BOUNDARIES OVER 768px
+   GLOBAL LARGE SCREEN VIEWPORT BASICS (768px and above)
    ======================================================================== */
 @media (min-width: 768px) {
-    /* Header & Logo Spacing Scaling Adjustments */
-    header {
-        grid-template-columns: 32px auto;
-        padding: 0.75rem 2rem;
-    }
-
-    header img {
-        width: 32px;
-        height: 32px;
-    }
-
-    /* Hide the mobile navigation toggle switch item completely */
-    #nav-button {
-        display: none;
-    }
-
-    /* Turn stacked navigation panel elements into an inline flexbox row layout */
-    nav {
-        display: flex !important;
-        flex-direction: row;
-    }
-    
-    nav a {
-        flex: 1;
-        border-bottom: none;
-        border-right: 1px solid #334155;
-        padding: 1.25rem;
-    }
-    
-    nav a:last-child { 
-        border-right: none; 
-    }
-
-    /* Homepage Dashboard Layout: Single stacked column turns into a 3-column asymmetric matrix */
-    .home-dashboard-layout {
+    header { 
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 1.5rem;
-    }
-
-    /* Directory View Toggles: Convert cards layout from stacked columns into a 3-column structural grid map */
-    .grid-mode, 
-    .spotlight-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-
-    /* Directory List View: Changes list presentation rows from stacked vertical data items to an inline horizontal orientation row layout */
-    .list-mode .member-card {
-        flex-direction: row;
-        justify-content: space-between;
+        grid-template-columns: 32px auto; 
+        padding: 0.75rem 2rem; 
         align-items: center;
-        padding: 0.75rem 1.5rem;
     }
+    header img { width: 32px; height: 32px; }
+    #nav-button { display: none; } /* Hide mobile hamburger toggle */
     
-    .list-mode .member-card h2 { flex: 2; }
-    .list-mode .member-card p  { flex: 2; text-align: left; }
+    nav { 
+        display: flex !important; 
+        flex-direction: row; 
+        background-color: var(--dark-neutral, #334155);
+    }
+    nav a { 
+        flex: 1; 
+        border-bottom: none; 
+        border-right: 1px solid #475569; 
+        padding: 1.25rem; 
+        text-align: center;
+    }
+    nav a:last-child { border-right: none; }
+
+    /* Home Dashboard Base Grid */
+    .home-dashboard-layout { 
+        display: grid; 
+        grid-template-columns: 2fr 1fr 1fr; 
+        gap: 1.5rem; 
+    }
+    .spotlight-grid { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem; 
+    }
+
+    /* Directory View Adaptations */
+    .grid-mode { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem; 
+    }
+    .list-mode .member-card { 
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0.75rem 1.5rem; 
+    }
+    .list-mode .member-card h2 { flex: 2; margin: 0; }
+    .list-mode .member-card p  { flex: 2; text-align: left; margin: 0; }
     .list-mode .member-card .web-link { flex: 1.5; text-align: right; }
 
-    .join-layout-container {
-        display: grid;
-        grid-template-columns: 1.8fr 1fr;
-        gap: 3rem;
-        align-items: start;
+    /* Join & Application Form Layouts */
+    .join-layout-container { 
+        display: grid; 
+        grid-template-columns: 1.8fr 1fr; 
+        gap: 3rem; 
+        align-items: start; 
     }
+
+    /* ========================================================================
+       DISCOVER PAGE COMPONENT SYSTEM - TABLETS (641px to 1024px Layout Spec)
+       ======================================================================== */
+    #discoverGridContainer {
+        display: grid;
+        grid-template-columns: 2fr; /* Retain standard single-column card sequence layout */
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    #discoverGridContainer .discover-card {
+        display: grid;
+        grid-template-columns: 4fr 6fr; /* 40% graphic weight, 60% typography weight */
+        grid-template-areas:
+            "cardPhoto cardName"
+            "cardPhoto cardDesc"
+            "cardPhoto cardLocation"
+            "cardButton cardButton"; /* Button expands fully under the split columns */
+        gap: 1rem 1.5rem;
+        padding: 1.5rem;
+        border: 1px solid var(--border-gray, #cbd5e1);
+        background-color: var(--light-surface, #f8fafc);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    #discoverGridContainer .discover-card img {
+        width: 300px;
+        height: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    #discoverGridContainer .discover-card h2 { 
+        margin: 0 0 0.5rem 0; 
+        font-size: 1.4rem; 
+    }
+    
+    #discoverGridContainer .discover-card p { 
+        margin: 0 0 0.75rem 0; 
+        font-size: 0.95rem; 
+        line-height: 1.4; 
+    }
+    
+    #discoverGridContainer .discover-card address { 
+        margin: auto 0 0 0; /* Keeps location baseline anchored */
+        font-size: 0.85rem; 
+        font-style: normal;
+    }
+    
+    #discoverGridContainer .discover-card .learn-btn { 
+        margin-top: 0.5rem; 
+        width: 100%; 
+        padding: 0.75rem; 
+        border-radius: 50px; /* Capsule shape toggle styling */
+    }
+}
+
+/* ========================================================================
+   DISCOVER PAGE COMPONENT SYSTEM - DESKTOPS (1025px and above Layout Spec)
+   ======================================================================== */
+@media (min-width: 1025px) {
+    /* Page Matrix Configuration */
+    #discoverGridContainer {
+        grid-template-columns: repeat(2, 1fr); /* Split outer layout safely into two columns of parallel cards */
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Inner Component Adjustments */
+    #discoverGridContainer .discover-card {
+        grid-template-columns: 4fr 6fr;
+        grid-template-areas:
+            "cardPhoto cardName"
+            "cardPhoto cardDesc"
+            "cardPhoto cardLocation"
+            "cardButton cardButton";
+        gap: 1.25rem 1.75rem;
+        padding: 1.75rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #discoverGridContainer .discover-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+    }
+
+    #discoverGridContainer .discover-card img {
+        max-height: 220px;
+        transition: filter 0.4s ease;
+    }
+
+    #discoverGridContainer .discover-card:hover img {
+        filter: saturate(1.1) brightness(1.03);
+    }
+
+    #discoverGridContainer .discover-card h2 { font-size: 1.5rem; }
+    #discoverGridContainer .discover-card p { font-size: 0.95rem; }
 }

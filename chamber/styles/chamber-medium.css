@@ -1,0 +1,58 @@
+/* ========================================================================
+   DISCOVER COMPONENT SHIFTS - TARGETS TABLETS (641px to 1024px)
+   ======================================================================== */
+@media (min-width: 641px) and (max-width: 1024px) {
+    /* 1. Page-Level Layout: Keep cards stacked vertically in a single column */
+    #discoverGridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    /* 2. Inner-Card Layout: Create a horizontal split with a full-width bottom button */
+    #discoverGridContainer .discover-card {
+        display: grid;
+        /* Left column gets 40% width for the photo, right column takes the remaining space */
+        grid-template-columns: 4fr 6fr;
+        grid-template-areas:
+            "cardPhoto cardName"
+            "cardPhoto cardDesc"
+            "cardPhoto cardLocation"
+            "cardButton cardButton"; /* Spans across both columns at the bottom */
+        gap: 1rem 1.5rem; /* 1rem vertical row gap, 1.5rem horizontal column gap */
+        padding: 1.5rem;
+    }
+
+    /* Adjust element proportions to match the spec layout */
+    #discoverGridContainer .discover-card img {
+        width: 300px;
+        height: 200px; 
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    #discoverGridContainer .discover-card h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.4rem;
+    }
+
+    #discoverGridContainer .discover-card p {
+        margin: 0 0 0.75rem 0;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    #discoverGridContainer .discover-card address {
+        margin: auto 0 0 0; /* Pushes the address badge elegantly to the bottom of its text track */
+        font-size: 0.85rem;
+    }
+
+    #discoverGridContainer .discover-card .learn-btn {
+        margin-top: 0.5rem;
+        width: 100%; /* Stretches edge-to-edge across the bottom track */
+        padding: 0.75rem;
+        border-radius: 50px; /* Gives the button that clean capsule shape in your image */
+    }
+}

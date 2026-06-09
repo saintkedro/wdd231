@@ -566,3 +566,85 @@ form input:required:invalid:focus {
     border-bottom: 1px solid var(--border-gray);
 }
 .data-display-table th { background-color: var(--dark-neutral); color: #ffffff; width: 35%; }
+
+/* ========================================================================
+   DISCOVER INNER CARD ARCHITECTURE (Mobile-First Setup)
+   ======================================================================== */
+
+#discoverGridContainer .discover-card h2 { 
+    grid-area: cardName; 
+    margin: 0.5rem 8px;
+    font-size: 1.2rem;
+    color: var(--primary, #1e3a8a);
+}
+
+#discoverGridContainer .discover-card img { 
+    grid-area: cardPhoto; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+#discoverGridContainer .discover-card p { 
+    grid-area: cardDesc; 
+    margin: 0.5rem 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#discoverGridContainer .discover-card address { 
+    grid-area: cardLocation; 
+    margin: 0.25rem 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--secondary, #0f766e);
+}
+
+#discoverGridContainer .discover-card .learn-btn { 
+    grid-area: cardButton; 
+    margin: 0.5rem 8px;
+    padding: 0.6rem;
+    background-color: var(--dark-neutral, #334155);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#discoverGridContainer .discover-card {
+    margin: 1rem 0;
+    border: 1px solid var(--border-gray, #cbd5e1);
+    background-color: var(--light-surface, #f8fafc);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cardName"
+        "cardPhoto"
+        "cardDesc"
+        "cardLocation"
+        "cardButton";
+    gap: 0.5rem;
+}
+
+#discoverGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.visitor-alert-card {
+    background-color: #f1f5f9;
+    border-left: 4px solid var(--secondary, #0f766e);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+.visitor-alert-card p { margin: 0; font-weight: 500; }
