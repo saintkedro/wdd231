@@ -1,0 +1,58 @@
+.main-header {
+    background-color: var(--white-card);
+    border-bottom: 3px solid var(--primary-blue);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuToggleButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+}
+
+#menuToggleButton .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-blue);
+}
+
+#primaryNavigationMenu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#primaryNavigationMenu.open {
+    display: flex;
+}
+
+.grid-layout-block, .directory-control-deck, .form-layout-envelope {
+    padding: 2rem 1rem;
+}
+
+.cards-matrix-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.services-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+}
+
+.info-segment-card {
+    margin-bottom: 1rem;
+}

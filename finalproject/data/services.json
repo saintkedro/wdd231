@@ -1,0 +1,122 @@
+[
+  {
+    "id": "LAB-01",
+    "name": "Full Blood Count (FBC)",
+    "category": "laboratory",
+    "price": "₦7,500",
+    "time": "4 Hours",
+    "preparation": "No specific fasting required. Stay well hydrated before blood draw."
+  },
+  {
+    "id": "LAB-02",
+    "name": "Fasting Blood Glucose (FBG)",
+    "category": "laboratory",
+    "price": "₦3,500",
+    "time": "3 Hours",
+    "preparation": "Strict overnight fasting for 8 to 12 hours is mandatory before collection."
+  },
+  {
+    "id": "LAB-03",
+    "name": "Lipid Profile Panel",
+    "category": "laboratory",
+    "price": "₦12,000",
+    "time": "6 Hours",
+    "preparation": "Fasting required for 9 to 12 hours. Avoid alcohol 24 hours prior."
+  },
+  {
+    "id": "LAB-04",
+    "name": "Liver Function Test (LFT)",
+    "category": "laboratory",
+    "price": "₦14,500",
+    "time": "1 Day",
+    "preparation": "Certain medications might interfere. Discuss with your physician."
+  },
+  {
+    "id": "LAB-05",
+    "name": "Kidney Function Test (E/U/Cr)",
+    "category": "laboratory",
+    "price": "₦15,000",
+    "time": "1 Day",
+    "preparation": "Avoid eating high amounts of meat 24 hours before taking the test."
+  },
+  {
+    "id": "LAB-06",
+    "name": "Thyroid Panel (T3, T4, TSH)",
+    "category": "laboratory",
+    "price": "₦22,000",
+    "time": "2 Days",
+    "preparation": "Inform lab technicians if you are currently taking thyroid supplements."
+  },
+  {
+    "id": "LAB-07",
+    "name": "Hepatitis B Surface Antigen",
+    "category": "laboratory",
+    "price": "₦5,000",
+    "time": "4 Hours",
+    "preparation": "No specific preparation required. Walk-in screening available."
+  },
+  {
+    "id": "LAB-08",
+    "name": "Typhoid Dot Test",
+    "category": "laboratory",
+    "price": "₦4,500",
+    "time": "3 Hours",
+    "preparation": "No special fasting parameters required for this antibody scan."
+  },
+  {
+    "id": "RAD-01",
+    "name": "Pelvic & Abdominal Ultrasound",
+    "category": "radiology",
+    "price": "₦18,500",
+    "time": "Immediate",
+    "preparation": "Drink 1 liter of water 1 hour before scan. Do not empty your bladder."
+  },
+  {
+    "id": "RAD-02",
+    "name": "Digital Chest X-Ray",
+    "category": "radiology",
+    "price": "₦12,500",
+    "time": "1 Hour",
+    "preparation": "Remove all metallic objects, jewelry, and piercings before imaging."
+  },
+  {
+    "id": "RAD-03",
+    "name": "Electrocardiogram (ECG)",
+    "category": "radiology",
+    "price": "₦15,000",
+    "time": "30 Minutes",
+    "preparation": "Avoid applying oily body lotions or creams to chest area on scan day."
+  },
+  {
+    "id": "RAD-04",
+    "name": "Obstetric Ultrasound Scan",
+    "category": "radiology",
+    "price": "₦10,000",
+    "time": "Immediate",
+    "preparation": "Hydrate adequately as instructed by your antenatal care coordinator."
+  },
+  {
+    "id": "CAR-01",
+    "name": "Echocardiogram (Echo)",
+    "category": "cardiology",
+    "price": "₦45,000",
+    "time": "2 Hours",
+    "preparation": "Wear a loose, comfortable two-piece outfit to simplify lead placement."
+  },
+  {
+    "id": "LAB-09",
+    "name": "Glycated Hemoglobin (HbA1c)",
+    "category": "laboratory",
+    "price": "₦9,500",
+    "time": "5 Hours",
+    "preparation": "Can be performed at any time of day. Fasting is completely optional."
+  },
+  {
+    "id": "RAD-05",
+    "name": "Mammography Screening",
+    "category": "radiology",
+    "price": "₦25,000",
+    "time": "1 Day",
+    "preparation": "Do not use underarm deodorants, body powders, or perfumes on scan day."
+  }
+]

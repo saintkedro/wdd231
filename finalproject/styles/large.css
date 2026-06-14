@@ -1,0 +1,18 @@
+.grid-layout-block, .directory-control-deck {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.services-cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.form-layout-envelope {
+    max-width: 700px;
+    margin: 4rem auto;
+}

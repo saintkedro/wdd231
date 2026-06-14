@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostics Directory | Atlantic Medical</title>
+    <meta name="description" content="Browse our complete list of 15+ diagnostic tests, real-time pricing grids, and patient preparation guidelines online.">
+    <meta name="author" content="Kingsley Isong">
+
+    <meta property="og:title" content="Diagnostics Directory | Test Prices & Prep Guidelines">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saintkedro.github.io/wdd231/finalproject/directory.html">
+    <meta property="og:image" content="images/og-directory-preview.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (min-width: 0px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
+    
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/directory.js" type="module" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <span class="brand-emblem">⚓</span>
+            <div class="brand-text">
+                <h1>Atlantic Medical</h1>
+                <p>Diagnostics Center</p>
+            </div>
+        </div>
+        <button id="menuToggleButton" aria-label="Toggle navigation interfaceMenu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="primaryNavigationMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="directory.html" class="nav-link active">Test Directory</a>
+            <a href="book.html" class="nav-link">Schedule Appointment</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-control-deck">
+            <h2>Diagnostic Service Directory</h2>
+            <p>Filter through our operations to check real-time pricing and sample handling instructions instantly.</p>
+            
+            <div class="filter-switchers">
+                <button class="filter-btn active" data-category="all">All Operations</button>
+                <button class="filter-btn" data-category="laboratory">Laboratory Labs</button>
+                <button class="filter-btn" data-category="radiology">Radiology Scans</button>
+                <button class="filter-btn" data-category="cardiology">Cardiology</button>
+            </div>
+        </section>
+
+        <section id="servicesGridContainer" class="services-cards-grid"></section>
+
+        <dialog id="testDetailsModal" class="info-dialog-window">
+            <div class="modal-content-wrapper">
+                <h3 id="modalTestName">Test Details</h3>
+                <div class="modal-body-fields">
+                    <p><strong>Department Classification:</strong> <span id="modalTestCategory"></span></p>
+                    <p><strong>Official Cost Estimate:</strong> <span id="modalTestPrice"></span></p>
+                    <p><strong>Estimated Result Turnaround:</strong> <span id="modalTestTime"></span></p>
+                    <p class="prep-alert-box"><strong>Fasting & Preparation Rules:</strong> <br><span id="modalTestPrep"></span></p>
+                </div>
+                <div class="modal-actions-track">
+                    <button id="closeModalButton" class="modal-close-trigger">Close Window</button>
+                    <a id="modalBookLink" href="book.html" class="modal-action-redirect">Book This Test</a>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Atlantic Medical Diagnostics Center. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

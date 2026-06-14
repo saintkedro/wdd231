@@ -1,0 +1,240 @@
+:root {
+    --primary-blue: #0b3c95;      /* High Contrast Brand Anchor */
+    --accent-red: #e2231a;        /* CTA Highlights */
+    --dark-neutral: #1e293b;      /* Accessible Text Body Contrast */
+    --light-surface: #f8fafc;     /* Clean Framework Base */
+    --white-card: #ffffff;        /* Surface Blocks grounding */
+    --border-gray: #cbd5e1;       /* UI Outlines */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-surface);
+    color: var(--dark-neutral);
+    line-height: 1.6;
+}
+
+.brand-text h1 {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.brand-text p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+}
+
+.visitor-alert-banner {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--accent-red);
+}
+
+.nav-link {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--dark-neutral);
+    font-weight: 500;
+    border-radius: 4px;
+    display: block;
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+.action-trigger-btn {
+    background-color: var(--accent-red);
+    color: #ffffff;
+    padding: 0.85rem 1.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Upgraded Card Engine Framework Styles */
+.service-item-card {
+    background-color: var(--white-card);
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item-card > div:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item-card h3 {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+.service-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-neutral);
+    margin: 0.5rem 0;
+}
+
+.card-view-details-btn {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.card-view-details-btn:hover {
+    background-color: #082d70;
+}
+
+/* Category Switcher Row Rules */
+.filter-switchers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.filter-btn {
+    background-color: var(--white-card);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    padding: 0.6rem 1.2rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+/* Form Styles */
+.medical-intake-form fieldset {
+    border: 1px solid var(--border-gray);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    background: var(--white-card);
+}
+
+.medical-intake-form legend {
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: var(--primary-blue);
+}
+
+.medical-intake-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.medical-intake-form input, 
+.medical-intake-form select, 
+.medical-intake-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.submit-form-trigger {
+    width: 100%;
+    background-color: var(--accent-red);
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Dialog Frame Settings */
+.info-dialog-window {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.info-dialog-window::backdrop {
+    background-color: rgba(15, 23, 42, 0.6);
+}
+
+.prep-alert-box {
+    background: #fff1f2;
+    padding: 1rem;
+    border-left: 4px solid var(--accent-red);
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.modal-actions-track {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.modal-close-trigger {
+    background: #e2e8f0;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.modal-action-redirect {
+    background: var(--accent-red);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.main-footer {
+    background-color: var(--dark-neutral);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.foot-meta-link { color: #94a3b8; }

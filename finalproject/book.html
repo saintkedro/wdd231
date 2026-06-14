@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Diagnostics Appointment | Atlantic Medical</title>
+    <meta name="description" content="Securely schedule your diagnostic test window at Atlantic Medical Oron. Fill out our online patient registration form.">
+    <meta name="author" content="Kingsley Isong">
+
+    <meta property="og:title" content="Secure Diagnostic Scheduling Form | Oron">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saintkedro.github.io/wdd231/finalproject/book.html">
+    <meta property="og:image" content="images/og-booking-preview.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (min-width: 0px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
+    
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <span class="brand-emblem">⚓</span>
+            <div class="brand-text">
+                <h1>Atlantic Medical</h1>
+                <p>Diagnostics Center</p>
+            </div>
+        </div>
+        <button id="menuToggleButton" aria-label="Toggle navigation interfaceMenu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="primaryNavigationMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="directory.html" class="nav-link">Test Directory</a>
+            <a href="book.html" class="nav-link active">Schedule Appointment</a>
+        </nav>
+    </header>
+
+    <main class="form-layout-envelope">
+        <section class="form-header-intro">
+            <h2>Online Intake Coordination Form</h2>
+            <p>Provide accurate patient details below. Ensure fasting guidelines are carefully followed before arrival.</p>
+        </section>
+
+        <form action="thanks.html" method="GET" class="medical-intake-form">
+            <fieldset>
+                <legend>Patient Identity Information</legend>
+                
+                <label for="patientName">Full Legal Name *</label>
+                <input type="text" id="patientName" name="fullName" required placeholder="John Doe">
+
+                <label for="patientPhone">Contact Phone Number *</label>
+                <input type="tel" id="patientPhone" name="phoneNumber" required placeholder="08012345678">
+
+                <label for="patientEmail">Secure Email Address</label>
+                <input type="email" id="patientEmail" name="emailAddress" placeholder="patient@example.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment Window Details</legend>
+
+                <label for="targetDate">Target Test Date *</label>
+                <input type="date" id="targetDate" name="appointmentDate" required>
+
+                <label for="medicalSegment">Primary Testing Department *</label>
+                <select id="medicalSegment" name="department" required>
+                    <option value="">-- Choose Category --</option>
+                    <option value="pathology">Pathology Laboratory Lab</option>
+                    <option value="radiology">Radiology Imaging Scan</option>
+                    <option value="cardiology">Cardiology Check</option>
+                </select>
+
+                <label for="patientNotes">Special Clinical Notes / Physician Instructions</label>
+                <textarea id="patientNotes" name="clinicalNotes" rows="4" placeholder="List ongoing medications..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="submit-form-trigger">Finalize Online Appointment Reservation</button>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Atlantic Medical Diagnostics Center. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
