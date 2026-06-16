@@ -10,6 +10,23 @@
     gap: 1rem;
 }
 
+.info-segment-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.card-image-wrap {
+    height: 200px; 
+}
+
+.card-text-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .cards-matrix-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -21,4 +38,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 1.5rem;
+}
+
+.location-brief-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem;
 }
