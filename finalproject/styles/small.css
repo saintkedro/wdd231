@@ -40,6 +40,18 @@
     padding: 2rem 1rem;
 }
 
+.hero-billboard {
+    height: 420px; /* Conserves vertical space on compact viewports */
+}
+
+.hero-inner h2 {
+    font-size: 1.75rem;
+}
+
+.hero-inner p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
 .cards-matrix-container {
     display: flex;
     flex-direction: column;
@@ -55,4 +67,8 @@
 
 .info-segment-card {
     margin-bottom: 1rem;
+}
+
+.location-brief-panel {
+    padding: 2.5rem 1rem;
 }

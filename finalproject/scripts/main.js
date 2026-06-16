@@ -52,3 +52,9 @@ function initVisitorMetricsBanner() {
     }
     localStorage.setItem("atlanticLastVisitDate", currentTimestamp);
 }
+
+// Dynamic metadata injections
+    const yearNode = document.getElementById("currentyear");
+    const modNode = document.getElementById("lastModified");
+    if (yearNode) yearNode.textContent = new Date().getFullYear();
+    if (modNode) modNode.textContent = `Last Modified: ${document.lastModified}`;

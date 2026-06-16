@@ -10,7 +10,7 @@
     <meta property="og:title" content="Secure Diagnostic Scheduling Form | Oron">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saintkedro.github.io/wdd231/finalproject/book.html">
-    <meta property="og:image" content="images/og-booking-preview.jpg">
+    <meta property="og:image" content="images/og-booking-preview.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +28,10 @@
 <body>
 
     <header class="main-header">
-        <div class="logo-area">
-            <span class="brand-emblem">⚓</span>
-            <div class="brand-text">
-                <h1>Atlantic Medical</h1>
-                <p>Diagnostics Center</p>
-            </div>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/atlantic-medical-logo.png" alt="Atlantic Medical Diagnostics Logo" class="logo">
+            </a> 
         </div>
         <button id="menuToggleButton" aria-label="Toggle navigation interfaceMenu" aria-expanded="false">
             <span class="bar"></span>
@@ -88,9 +86,11 @@
             <button type="submit" class="submit-form-trigger">Finalize Online Appointment Reservation</button>
         </form>
     </main>
-
     <footer class="main-footer">
-        <p>&copy; 2026 Atlantic Medical Diagnostics Center. All Rights Reserved.</p>
+        <p>&copy; <span id="currentyear"></span> • Atlantic Medical Diagnostics • All Rights Reserved</p>
+        
+        <p id="lastModified"></p>
+        <p><a href="attributions.html" class="foot-meta-link">Academic Resource Attributions</a></p>
     </footer>
 
 </body>

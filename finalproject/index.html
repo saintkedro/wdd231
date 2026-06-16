@@ -10,7 +10,7 @@
     <meta property="og:title" content="Atlantic Medical Diagnostics | Professional Testing in Oron">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saintkedro.github.io/wdd231/finalproject/index.html">
-    <meta property="og:image" content="images/og-home-preview.jpg">
+    <meta property="og:image" content="images/og-home-preview.webp">
     <meta property="og:description" content="Shift physical diagnostic wait lines into an immediate online queue slot.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,12 +31,10 @@
     <div id="visitor-message-box"></div>
 
     <header class="main-header">
-        <div class="logo-area">
-            <span class="brand-emblem">⚓</span>
-            <div class="brand-text">
-                <h1>Atlantic Medical</h1>
-                <p>Diagnostics Center</p>
-            </div>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/atlantic-medical-logo.png" alt="Atlantic Medical Diagnostics Logo" class="logo">
+            </a> 
         </div>
         <button id="menuToggleButton" aria-label="Toggle navigation interfaceMenu" aria-expanded="false">
             <span class="bar"></span>
@@ -51,9 +49,20 @@
     </header>
 
     <main>
+        <!-- Clean, High-Impact Hero Engagement Billboard Component Frame -->
         <section class="hero-billboard">
+            <!-- Native Single WebP Engine Layer with High Loading Priority Tagging -->
+            <img src="images/hero-diagnostics.webp" 
+                 alt="Clean clinical environment showcasing professional diagnostic laboratory tracking equipment" 
+                 width="1200" 
+                 height="500" 
+                 class="hero-media-canvas"
+                 priority="high">
+                 
+            <div class="hero-overlay-mask"></div>
+            
             <div class="hero-inner">
-                <h2>Clinical Accuracy. Rapid Turnaround. Trusted Results.</h2>
+                <h2>Clinical Accuracy. <br>Rapid Turnaround. Trusted Results.</h2>
                 <p>Skip the waiting queues in Oron. Browse specialized laboratory tests and schedule your appointments online securely.</p>
                 <a href="directory.html" class="action-trigger-btn">Explore Test Catalog</a>
             </div>
@@ -62,18 +71,49 @@
         <section class="grid-layout-block">
             <h2 class="section-title">Our Specialized Departments</h2>
             <div class="cards-matrix-container">
+                
                 <div class="info-segment-card">
-                    <h3>Pathology Laboratory</h3>
-                    <p>Complete metabolic chemistry profiles, hematology counts, lipid tracks, and custom specimen assessments executed by certified lab technicians.</p>
+                    <div class="card-image-wrap">
+                        <img src="images/dept-pathology.webp" 
+                             alt="Medical laboratory technician verifying sample fluids" 
+                             width="400" 
+                             height="250" 
+                             loading="lazy">
+                    </div>
+                    <div class="card-text-content">
+                        <h3>Pathology Laboratory</h3>
+                        <p>Complete metabolic chemistry profiles, hematology counts, lipid tracks, and custom specimen assessments executed by certified lab technicians.</p>
+                    </div>
                 </div>
+
                 <div class="info-segment-card">
-                    <h3>Radiology & Imaging</h3>
-                    <p>High-resolution digital chest radiography, diagnostic pelvic/abdominal scans, and obstetric ultrasound tracking.</p>
+                    <div class="card-image-wrap">
+                        <img src="images/dept-radiology.webp" 
+                             alt="High-resolution medical ultrasound screening device monitor" 
+                             width="400" 
+                             height="250" 
+                             loading="lazy">
+                    </div>
+                    <div class="card-text-content">
+                        <h3>Radiology & Imaging</h3>
+                        <p>High-resolution digital chest radiography, diagnostic pelvic/abdominal scans, and obstetric ultrasound tracking.</p>
+                    </div>
                 </div>
+
                 <div class="info-segment-card">
-                    <h3>Cardiology Screenings</h3>
-                    <p>Electrocardiogram diagnostics to monitor heart health, rhythm pathways, and cardiovascular functions accurately.</p>
+                    <div class="card-image-wrap">
+                        <img src="images/dept-xray.webp" 
+                             alt="Electrocardiogram system mapping cardiovascular heart rhythm data lines" 
+                             width="400" 
+                             height="250" 
+                             loading="lazy">
+                    </div>
+                    <div class="card-text-content">
+                        <h3>X-ray Services</h3>
+                        <p>Performed by experienced radiology professionals, our X-rays deliver clear results that support timely and effective medical decisions.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -85,9 +125,12 @@
     </main>
 
     <footer class="main-footer">
-        <p>&copy; 2026 Atlantic Medical Diagnostics Center. All Rights Reserved.</p>
+        <p>&copy; <span id="currentyear"></span> • Atlantic Medical Diagnostics • All Rights Reserved</p>
+        
+        <p id="lastModified"></p>
         <p><a href="attributions.html" class="foot-meta-link">Academic Resource Attributions</a></p>
     </footer>
+        
 
 </body>
 </html>
