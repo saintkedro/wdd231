@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation Confirmed | Atlantic Medical</title>
-    <meta name="description" content="Your online diagnostic appointment scheduling request has been processed successfully.">
-    <meta name="author" content="Kingsley Isong">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -18,34 +11,72 @@
     <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 768px)">
     
     <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/thanks.js" type="module" defer></script>
 </head>
 <body>
 
     <header class="main-header">
-        <div class="logo-area">
-            <span class="brand-emblem">⚓</span>
-            <div class="brand-text">
-                <h1>Atlantic Medical</h1>
-                <p>Diagnostics Center</p>
-            </div>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/atlantic-medical-logo.webp" alt="Atlantic Medical Diagnostics Logo" class="logo">
+            </a> 
         </div>
     </header>
 
     <main class="confirmation-envelope">
         <div class="success-message-card">
-            <span class="success-icon">✔️</span>
-            <h2>Appointment Logged Successfully</h2>
-            <p>Thank you for choosing Atlantic Medical Diagnostics. Your information has been registered into our priority queue network.</p>
-            <p class="alert-highlight-text" style="color: var(--accent-red); margin-top: 1rem; font-weight: 500;">Please review all test preparation guidelines inside the Directory tab before visiting our center.</p>
-            <a href="index.html" class="return-home-btn">Return to Homepage</a>
+            
+            <div class="success-card-header">
+                <span class="success-icon">✔️</span>
+                <h2>Appointment Logged Successfully</h2>
+                <p>Thank you. Your information has been registered into our queue.</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="receipt-data-payload">
+                <h3>Submitted Registration Details:</h3>
+                <table class="receipt-table">
+                    <tr>
+                        <th>Patient Name:</th>
+                        <td id="displayFullName" class="highlighted-field">Loading...</td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number:</th>
+                        <td id="displayPhone">Loading...</td>
+                    </tr>
+                    <tr>
+                        <th>Email Address:</th>
+                        <td id="displayEmail">Loading...</td>
+                    </tr>
+                    <tr>
+                        <th>Target Date:</th>
+                        <td id="displayDate" class="date-field">Loading...</td>
+                    </tr>
+                    <tr>
+                        <th>Department:</th>
+                        <td id="displayDepartment" class="capitalize-field">Loading...</td>
+                    </tr>
+                    <tr>
+                        <th class="align-top-header">Clinical Notes:</th>
+                        <td id="displayNotes" class="notes-field">None provided.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="success-card-footer">
+                <p class="alert-highlight-text">Please review all test preparation guidelines inside the Directory tab before visiting.</p>
+                <a href="index.html" class="return-home-btn">Return to Homepage</a>
+            </div>
+            
         </div>
     </main>
 
     <footer class="main-footer">
-        <p>&copy; <span id="currentyear"></span> • Atlantic Medical Diagnostics • All Rights Reserved</p>
-        
+        <p>&copy; <span id="currentyear"></span> • Atlantic Medical Diagnostics</p>
         <p id="lastModified"></p>
-        <p><a href="attributions.html" class="foot-meta-link">Academic Resource Attributions</a></p>
     </footer>
 
 </body>

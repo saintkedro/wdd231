@@ -306,6 +306,96 @@ body {
     margin: 0.5rem 0;
 }
 
+/* ========================================================================
+   THANKS PAGE STYLES
+   ======================================================================== */
+.confirmation-envelope {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.success-message-card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.success-card-header {
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 2.5rem;
+    color: #22c55e;
+}
+
+.section-divider {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 1.5rem 0;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-table tr {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.receipt-table th, 
+.receipt-table td {
+    padding: 0.65rem 0;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.receipt-table th {
+    color: #64748b;
+    width: 35%;
+    font-weight: 500;
+}
+
+.receipt-table .highlighted-field,
+.receipt-table .date-field {
+    font-weight: 700;
+}
+
+.receipt-table .capitalize-field {
+    text-transform: capitalize;
+}
+
+.success-card-footer {
+    text-align: center;
+}
+
+.alert-highlight-text {
+    color: #dc2626;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.return-home-btn {
+    display: inline-block;
+    background-color: #0b3c95;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+}
+
+.error-payload-message {
+    color: #dc2626;
+    text-align: center;
+    font-weight: 500;
+}
+
 .main-footer {
     background-color: var(--dark-neutral);
     color: #ffffff;
