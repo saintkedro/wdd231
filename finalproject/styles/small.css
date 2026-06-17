@@ -1,3 +1,15 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .success-message-card {
+        padding: 1.5rem;
+    }
+    .receipt-table th {
+        width: 40%;
+    }
+}
+
 .main-header {
     background-color: var(--white-card);
     border-bottom: 3px solid var(--primary-blue);
@@ -40,6 +52,9 @@
     padding: 2rem 1rem;
 }
 
+main h1 {
+        padding: 0.5rem 1rem;
+}
 .hero-billboard {
     height: 420px; 
     width: 100%;

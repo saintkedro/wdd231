@@ -1,3 +1,14 @@
+
+/* Tablet Rules */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .confirmation-envelope {
+        padding: 3rem 2rem;
+    }
+}
+
 #menuToggleButton {
     display: none;
 }

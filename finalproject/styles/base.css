@@ -7,6 +7,7 @@
     --border-gray: #cbd5e1;       /* UI Outlines */
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--light-surface);
