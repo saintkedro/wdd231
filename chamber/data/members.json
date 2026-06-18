@@ -4,7 +4,7 @@
         "address": "12 Ikot Ekpene Road, Uyo",
         "phone": "+234 812 345 6789",
         "website": "https://everydaydigital.ng",
-        "image": "images/member-eds.png",
+        "image": "images/member-eds.webp",
         "level": 3,
         "tagline": "Empowering local businesses via high-scale frontend systems."
     },
@@ -13,7 +13,7 @@
         "address": "24 IBB Avenue, Uyo",
         "phone": "+234 803 111 2222",
         "website": "https://ibomtech.org",
-        "image": "images/member-ibomtech.jpg",
+        "image": "images/member-ibomtech.webp",
         "level": 2,
         "tagline": "Incubating the next wave of West African digital innovators."
     },
@@ -22,7 +22,7 @@
         "address": "Sports Complex, Enen Afaha",
         "phone": "+234 705 999 8888",
         "website": "https://uyosmash.club",
-        "image": "images/member-smash.jpg",
+        "image": "images/member-smash.webp",
         "level": 1,
         "tagline": "Premium coaching and ladder tournaments for regional athletes."
     },
@@ -31,7 +31,7 @@
         "address": "5 Oron Road, Uyo",
         "phone": "+234 901 222 3333",
         "website": "https://apexstudio.ng",
-        "image": "images/member-apex.jpg",
+        "image": "images/member-apex.webp",
         "level": 1,
         "tagline": "Architectural visualizations and luxury interior design planning."
     },
@@ -40,7 +40,7 @@
         "address": "Industrial Estate, Itam",
         "phone": "+234 811 444 5555",
         "website": "https://meridianagro.ng",
-        "image": "images/member-meridian.jpg",
+        "image": "images/member-meridian.webp",
         "level": 2,
         "tagline": "Sustainable supply chains connecting farms to urban networks."
     },
@@ -49,7 +49,7 @@
         "address": "88 Aka Road, Uyo",
         "phone": "+234 802 777 8888",
         "website": "https://capitaltrust.coop",
-        "image": "images/member-trust.jpg",
+        "image": "images/member-trust.webp",
         "level": 3,
         "tagline": "Scalable microfinance and business management solutions."
     },
@@ -58,7 +58,7 @@
         "address": "Plot 14 Abak Road, Uyo",
         "phone": "+234 703 555 6666",
         "website": "https://bluehorizon.ng",
-        "image": "images/member-blue.jpg",
+        "image": "images/member-blue.webp",
         "level": 2,
         "tagline": "Seamless cross-country deliveries and haulage optimization."
     }
